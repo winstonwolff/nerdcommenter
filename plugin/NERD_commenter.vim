@@ -1509,7 +1509,7 @@ endfunction
 " Function: s:AddLeftDelim(delim, theLine) {{{2
 " Args:
 function s:AddLeftDelim(delim, theLine)
-    return substitute(a:theLine, '^\([ \t]*\)', '\1' . a:delim, '')
+    return substitute(a:theLine, '^', '\1' . a:delim, '')
 endfunction
 
 " Function: s:AddLeftDelimAligned(delim, theLine) {{{2
